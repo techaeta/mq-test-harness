@@ -23,3 +23,7 @@ Using 2 instances of Liberty with same app deployed is not necessary, but separa
 The template for WebShere Liberty instance is under main/liberty
 The app needs to be configured with TLS, hence jvm.options is used to point to keystore files with certs. It has hardcoded full path to jks files and needs to be edited
 
+## Sample run
+
+![Test harness](images/run.png)
+
