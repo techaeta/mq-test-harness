@@ -1,0 +1,5 @@
+-Djavax.net.ssl.trustStore=/Users/yaro/projects/wlp-20.0.0.5/usr/shared/resources/mq/nativeha.jks
+-Djavax.net.ssl.trustStorePassword=password
+-Djavax.net.ssl.keyStore=/Users/yaro/projects/wlp-20.0.0.5/usr/shared/resources/mq/nativeha.jks
+-Djavax.net.ssl.keyStorePassword=password
+-Dcom.ibm.mq.cfg.useIBMCipherMappings=false
