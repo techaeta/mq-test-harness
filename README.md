@@ -13,7 +13,9 @@ for i in {1..1000}; do echo -n `date +"[%H:%M:%S]\t"`;echo -n 'PUT:';curl http:/
 ```
 and the load driver generating GET messages :
 
+```
 for i in {1..1000}; do echo -n `date +"[%H:%M:%S]\t"`;echo -n 'GET:';curl http://localhost:9081/mq/GET -w '\t%{time_total}'; echo " "; sleep 1; done
+```
 
 Using 2 instances of Liberty with same app deployed is not necessary, but separate GET and PUT logs is easier to monitor.
 
