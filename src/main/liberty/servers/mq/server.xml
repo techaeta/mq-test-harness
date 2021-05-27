@@ -17,12 +17,11 @@
 
   <variable name="wmqJmsClient.rar.location" value="${wlp.user.dir}/shared/resources/mq/wmq.jmsra.rar"/>
 
-  <jmsConnectionFactory connectionManagerRef="ConMgr1" jndiName="jms/wmqCF">
+  <jmsConnectionFactory jndiName="jms/wmqCF">
     <properties.wmqJms queueManager="nativeha" channel="MQEXTERNALCHL" hostName="nativeha-ibm-mq-qm-cp4i.cp4i-validation-6nodes-2b2c5917db6d4ef128f8227d49c11e07-0000.us-east.containers.appdomain.cloud" 
        port="443" sslCipherSuite="TLS_RSA_WITH_AES_256_CBC_SHA256" transportType="CLIENT" />
  </jmsConnectionFactory>
 
- <connectionManager id="ConMgr1" maxPoolSize="1"/>
 
  <jmsQueue id="jms/sendQueue" jndiName="jms/sendQueue">
     <properties.wmqJms baseQueueName="APPQ"/>
